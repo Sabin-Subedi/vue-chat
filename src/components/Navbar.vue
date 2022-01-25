@@ -17,7 +17,6 @@ import useLogout from "../composables/useLogout";
 export default {
   setup() {
     const { error, logout } = useLogout();
-    const router = useRouter();
     const { user } = getUser();
 
     console.log(user);
